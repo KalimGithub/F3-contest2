@@ -1,49 +1,160 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
     padding: 0px;
     margin: 0px;
+    font-family: 'Mulish', sans-serif;
 }
 
 .container{
-  
-    display: flex;
-    flex-direction: column;
+     background-image: url(./Asset/Background\ Pattern\.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+    bottom: 500px;
+    /* height: 100vh; */
+}
 
-      align-items: center;
-    /* justify-content: space-evenly; */
+.card{
+    width: 40vw;
+    margin-left: 28rem;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 1px 1px 20px rgb(185, 182, 182);
 }
-#welcome-heading{
-    /* text-align: center; */
-    margin-top: 3rem;
-}
-/* #signup-heading{
-    /* text-align: center; */
-/* } */ 
-.input-container{
+
+.heading {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
+    margin-left: 3rem;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    font-size: 3rem;
+}
+
+.heading p {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
-    /* align-items: center; */
-
+    margin-left: 3rem;
 }
 
-input{
-    width: 50%;
-    padding: 1.5rem;
+input {
+    width: 85%;
+    padding: 0.7rem;
     border: 1px solid gray;
     border-radius: 10px;
+    
 }
 
-#label{
-    text-align: left;
+input:focus {
+    outline: none
 }
 
-#continue-btn{
-    width: 53%;
+
+#continue-btn {
+    width: 90%;
     background-color: #544DF0;
     color: white;
-    padding: 1.5rem;
-    border: 1px solid black;
+    padding: 1rem;
+    border: 1px solid;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+#mandatory-text {
+    color: #544DF0;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+#signup-text {
+    text-align: center;
+}
+
+#signup-text a {
+    color: #544DF0;
+}
+
+
+/* style for profile page */
+.back-img{
+    background-image: url(./Asset/Background\ Pattern.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+    height: 100vh;
+}
+.section-2{
+    background-color: #ffffff;
+    display: block;
+    align-items: center;
+    text-align: center;
+    max-width: fit-content;
+    /* align-self: center; */
+    margin-left: 30rem;
+    padding: 3rem;
+    box-shadow: 0px 0px 10px#d0d0d3;   
+    border-radius: 10px;
+}
+#top-heading{
+    color: #544DF0;
+    font-size:3rem;
+    /* text-align: center; */
+    margin: 1rem;
+    margin-left: 30rem;
+}
+
+#profile-heading{
+    text-align: center;
+    font-size:2rem;
+}
+
+.img-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.img-div img{
+    max-width: 70px;
+}
+
+.details{
+text-align: center;
+font-size: 1rem;
+
+}
+.details p{
+    padding: 10px;
+}
+
+#logout-btn{
+    background-color: #554DF1;
+    /* background-color: #544DF0; */
+    color: white;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 20rem;
 }
