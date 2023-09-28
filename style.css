@@ -6,19 +6,19 @@
     font-family: 'Mulish', sans-serif;
 }
 
-.container{
-     background-image: url(./Asset/Background\ Pattern\.svg);
+.container {
+    background-image: url(./Asset/Background\ Pattern\.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: bottom;
-    bottom: 500px;
-    /* height: 100vh; */
+    /* bottom: 500px; */
+    height: 100vh;
 }
 
-.card{
-    width: 40vw;
-    margin-left: 28rem;
+.card {
+    width: 30vw;
+    margin-left: 32rem;
     border: none;
     margin-top: 10px;
     box-shadow: 1px 1px 20px rgb(185, 182, 182);
@@ -34,7 +34,7 @@
 }
 
 .heading h1 {
-    font-size: 3rem;
+    font-size: 30px;
 }
 
 .heading p {
@@ -50,11 +50,10 @@
 }
 
 input {
-    width: 85%;
-    padding: 0.7rem;
+    width: 80%;
+    padding: 0.6rem;
     border: 1px solid gray;
-    border-radius: 10px;
-    
+    border-radius: 5px;
 }
 
 input:focus {
@@ -63,10 +62,10 @@ input:focus {
 
 
 #continue-btn {
-    width: 90%;
+    width: 83%;
     background-color: #544DF0;
     color: white;
-    padding: 1rem;
+    padding: 0.7rem;
     border: 1px solid;
     border-radius: 10px;
     cursor: pointer;
@@ -74,6 +73,21 @@ input:focus {
     margin-bottom: 10px;
 }
 
+#continue-btn:hover,#logout-btn:hover {
+    background-image: linear-gradient(45deg, rgb(38, 212, 228), rgb(237, 56, 56));;
+    color: black;
+    border: 1px solid purple;
+}
+
+#password-not-matched {
+    /* text-align: center; */
+    margin-left: 60px;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    font-family: monospace;
+
+}
 
 #mandatory-text {
     color: #544DF0;
@@ -86,6 +100,7 @@ input:focus {
 
 #signup-text {
     text-align: center;
+    margin-top: 20px;
 }
 
 #signup-text a {
@@ -94,7 +109,7 @@ input:focus {
 
 
 /* style for profile page */
-.back-img{
+.back-img {
     background-image: url(./Asset/Background\ Pattern.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,7 +117,8 @@ input:focus {
     background-position-y: bottom;
     height: 100vh;
 }
-.section-2{
+
+.section-2 {
     background-color: #ffffff;
     display: block;
     align-items: center;
@@ -111,43 +127,46 @@ input:focus {
     /* align-self: center; */
     margin-left: 30rem;
     padding: 3rem;
-    box-shadow: 0px 0px 10px#d0d0d3;   
+    box-shadow: 0px 0px 10px#d0d0d3;
     border-radius: 10px;
 }
-#top-heading{
+
+#top-heading {
     color: #544DF0;
-    font-size:3rem;
+    font-size: 3rem;
     /* text-align: center; */
     margin: 1rem;
     margin-left: 30rem;
 }
 
-#profile-heading{
+#profile-heading {
     text-align: center;
-    font-size:2rem;
+    font-size: 2rem;
 }
 
-.img-div{
+.img-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 30px;
 }
-.img-div img{
+
+.img-div img {
     max-width: 70px;
 }
 
-.details{
-text-align: center;
-font-size: 1rem;
+.details {
+    text-align: center;
+    font-size: 1rem;
 
 }
-.details p{
+
+.details p {
     padding: 10px;
 }
 
-#logout-btn{
+#logout-btn {
     background-color: #554DF1;
     /* background-color: #544DF0; */
     color: white;
